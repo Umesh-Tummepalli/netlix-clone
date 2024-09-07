@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+  color: white;
+  /* cursor:wait; */
+  transition: all .2s;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.background {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  overflow-x: hidden;
+}
+
+nav {
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  height: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+nav img {
+  height: 40px;
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  filter: contrast(500%);
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.text {
+  height: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  gap: 10px;
+  font-family: "Noto Sans", sans-serif;
+  overflow-wrap: break-word;
+  margin: auto;
+}
+
+.btn button,
+.started button {
+  background-color: red;
+  padding: 10px;
+  font-weight: 550;
+  color: white;
+  border: 0px;
+  border-radius: 7px;
+  margin: 0px 10px;
+  filter: brightness(150%);
+}
+
+.started {
+  margin-top: 15px;
+}
+
+.started input {
+  width: 300px;
+  background: transparent !important;
+}
+
+.started input,
+.btn select {
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgb(94, 94, 94);
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.text p:nth-child(1) {
+  font-size: 250%;
+  font-weight: 800;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.text p:nth-child(2) {
+  font-size: 150%;
+  font-weight: 600;
+}
+
+.text p:nth-child(3) {
+  font-size: 100%;
+}
+
+.btn button:hover,
+.started button:hover {
+  background-color: rgb(153, 11, 11);
+}
+
+div.line {
+  /* width: 100%; */
+  height: 4px;
+  background-color: rgb(39, 36, 36);
+  margin: 0px;
+}
+
+.image img {
+  width: 30vw;
+  position: relative;
+  z-index: 10;
+  filter: brightness(300%);
+}
+
+.image video {
+  position: absolute;
+  height: 18vh;
+  right: 22%;
+  filter: brightness(75%);
+}
+
+.first {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto;
+}
+
+.first div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  /* text-align: center; */
+}
+
+.first div:first-child span:first-child {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  overflow-wrap: break-word;
+}
+
+.first div:first-child span:nth-child(2) {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 15px;
+  overflow-wrap: break-word;
+}
+
+.second {
+  width: 60vw;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.second img {
+  width: 25vw;
+  margin: 0%;
+}
+.image7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+  /* height: 35vw; */
+  /* border: 2px solid white; */
+  /* background: url(3rd.png) center center/ cover; */
+}
+
+.image7 img {
+  position: relative;
+  top: 10%;
+  /* width: 75%; */
+  overflow: hidden;
+  z-index: -1;
+  margin: 0px 15%;
+}
+.third {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}
+#text span:first-child {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  overflow-wrap: break-word;
+}
+#text {
+  display: flex;
+  flex-direction: column;
+}
+
+#text span:nth-child(2) {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 15px;
+  overflow-wrap: break-word;
+}
+
+.text2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text2 span:first-child {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  overflow-wrap: break-word;
+}
+
+.text2 span:nth-child(2) {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 15px;
+  overflow-wrap: break-word;
+}
+
+.faq {
+  margin: 20px;
+}
+
+.faq h2 {
+  text-align: center;
+}
+
+.faq .ques {
+  height: 5vh;
+  width: min(1000px, 80vw);
+  background-color: rgba(70, 64, 64, 0.247);
+  margin: 0px auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.ans {
+  width: min(1000px, 80vw);
+  background-color: rgba(70, 64, 64, 0.247);
+  margin: 2px auto;
+  padding: 0px 10px;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+}
+.accordian {
+  margin-top: 10px;
+}
+
+.faq .ques:hover {
+  background-color: rgba(113, 109, 109, 0.53);
+}
+div.active {
+  height: 200px;
+  padding: 20px 10px;
+  border-radius: 4px;
+}
+.icon.active {
+  transform: rotate(45deg);
+  color: red;
+}
+.icon {
+  transition: 0.3s;
+}
+
+section.last {
+  display: flex;
+  column-gap: 30px;
+  margin: 20px;
+}
+
+div.foot {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  row-gap: 20px;
+  font-size: 12px;
+}
+
+.foot select {
+  background-color: transparent;
+  width: 50%;
+  border-radius: 7px;
+  padding: 3px;
+}
+
+#end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+::selection {
+  background-color: rgb(191, 5, 5);
+  color: black;
+}
+
+#end p {
+  margin: 20px 0px;
+}
+
+@media only screen and (max-width: 550px) {
+  nav {
+    width: 90vw;
+  }
+
+  .background {
+    height: 45vh;
+  }
+
+  .text {
+    height: 35vh;
+  }
+
+  .first,
+  .third {
+    width: 90vw;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 50px auto;
+  }
+
+  .first div:first-child,
+  .third:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    /* text-align: center; */
+  }
+
+  .first div:first-child span:first-child {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  .first div:first-child span:nth-child(2) {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 10px;
+  }
+
+  .image img {
+    width: 60vw;
+    z-index: 10;
+    filter: brightness(300%);
+    margin: auto;
+  }
+
+  /* .image video {
+        position: absolute;
+        width: 100%;
+        margin: auto;
+        filter: brightness(75%);
+    } */
+
+  .second {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .started button {
+    margin-top: 10px;
+  }
+
+  .second img {
+    width: 60vw;
+    margin: auto;
+  }
+  .third img {
+    margin: auto;
+    width: 60vw;
+  }
+  .third #text span:first-child {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  .third #text span:nth-child(2) {
+    margin-top: 20px;
+  }
+  /* .third video{
+        position: absolute;
+        width: 40vw;
+        top: auto;
+        left: 22%;
+    } */
+
+  .text2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text2 span:first-child {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+  }
+
+  .text2 span:nth-child(2) {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 15px;
+  }
+
+  .text p:first-child {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .text p:nth-child(2) {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .text p:nth-child(3) {
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .started div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .started input {
+    width: 70vw;
+    background: transparent;
+  }
+  #end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #end button {
+    font-size: 12px;
+    width: 40vw;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+  .foot select {
+    width: 20vw;
+  }
+
+  footer {
+    overflow: auto;
+  }
+  nav img {
+    height: 25px;
+  }
+  .btn button,
+  .btn select {
+    padding: 4px;
+    font-weight: 400;
+    margin-left: 2px;
+    border-radius: 4px;
+  }
+}
